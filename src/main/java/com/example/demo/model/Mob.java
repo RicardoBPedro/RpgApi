@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import com.example.demo.model.interfaces.Being;
+
 import java.util.List;
 
 public class Mob implements Being {
