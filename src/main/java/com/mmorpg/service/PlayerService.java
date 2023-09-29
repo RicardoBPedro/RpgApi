@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.mmorpg.service;
 
 public class PlayerService {
     // TODO: Implement it

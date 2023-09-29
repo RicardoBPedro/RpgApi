@@ -1,6 +1,6 @@
-package com.example.demo.model;
+package com.mmorpg.model;
 
-import com.example.demo.model.interfaces.Being;
+import com.mmorpg.model.interfaces.Being;
 
 import java.util.List;
 
