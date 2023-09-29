@@ -1,4 +1,4 @@
-package com.example.demo.model.interfaces;
+package com.mmorpg.model.interfaces;
 
 public interface Being extends Walkable, Battleble {
 }

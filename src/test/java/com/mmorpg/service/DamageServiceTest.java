@@ -1,22 +1,21 @@
-package com.example.demo.service;
+package com.mmorpg.service;
 
-import com.example.demo.model.Character;
-import com.example.demo.model.Damage;
-import com.example.demo.model.DamageType;
-import com.example.demo.model.Mob;
-import com.example.demo.model.interfaces.Battleble;
+import com.mmorpg.model.Character;
+import com.mmorpg.model.Damage;
+import com.mmorpg.model.DamageType;
+import com.mmorpg.model.Mob;
+import com.mmorpg.model.interfaces.Battleble;
+import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
+import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@ExtendWith(MockitoExtension.class)
+@MicronautTest
 public class DamageServiceTest {
 
-    @InjectMocks
+    @Inject
     private DamageService damageService;
 
     @Test

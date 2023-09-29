@@ -1,11 +1,13 @@
-package com.example.demo.service;
+package com.mmorpg.service;
 
-import com.example.demo.model.Damage;
-import com.example.demo.model.DamageType;
-import com.example.demo.model.interfaces.Battleble;
+import com.mmorpg.model.Damage;
+import com.mmorpg.model.DamageType;
+import com.mmorpg.model.interfaces.Battleble;
+import jakarta.inject.Singleton;
 
 import java.util.Random;
 
+@Singleton
 public class DamageService {
 
     // TODO: improve and test it

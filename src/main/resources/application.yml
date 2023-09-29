@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: demo
+  server:
+    port: 8081
+  router:
+    static-resources:
+      default:
+        enabled: true
+        mapping: /**
+        paths: classpath:public
+  executors:
+    consumer:
+      type: fixed
+      nThreads: 15
+    io:
+      type: fixed
+      nThreads: 75
