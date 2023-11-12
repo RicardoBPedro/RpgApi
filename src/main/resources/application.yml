@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: demo
+    name: mmorpg
   server:
     port: 8081
   router:
@@ -16,3 +16,17 @@ micronaut:
     io:
       type: fixed
       nThreads: 75
+
+mongodb:
+  uri: mongodb://mongo_mmorpg:mongo_password@localhost:27017/mmorpg?authSource=admin
+  options:
+    maxConnectionIdleTime: 10000
+    readConcern: majority
+  cluster:
+    maxWaitQueueSize: 5
+  connectionPool:
+    maxSize: 20
+
+mongo-database:
+  databaseName: "mmorpg"
+  collectionName: "character"
